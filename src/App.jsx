@@ -1,10 +1,21 @@
 
-function App() {
- 
+import React from 'react';
+// import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import CameraCapture from './components/CameraCapture';
+import OcrProcessor from './components/OcrProcessor';
+
+const App = () => {
   return (
-    <div>
-      <input type="file" name="image" accept="image/*" capture="environment" />
-    </div>
+    // <Router>
+    //   <Switch>
+    //     <Route exact path="/" component={CameraCapture} />
+    //     <Route path="/process" component={OcrProcessor} />
+    //   </Switch>
+    // </Router>
+    <>
+    <CameraCapture />
+    </>
   );
-}
+};
+
 export default App;
